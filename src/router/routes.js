@@ -1,10 +1,15 @@
+import MainLayout from 'src/layouts/MainLayout.vue'
+import AvatarPage from 'src/pages/AvatarPage.vue'
+import LandPage from 'src/pages/LandPage.vue'
+import ErrorNotFound from 'src/pages/ErrorNotFound.vue'
 
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    component: MainLayout,
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: AvatarPage },
+      { path: 'land', component: LandPage }
     ]
   },
 
