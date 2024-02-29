@@ -1,17 +1,10 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <ReadyPlayerMe />
   </q-page>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup>
+import ReadyPlayerMe from 'src/components/ReadyPlayerMe.vue';
 
-export default defineComponent({
-  name: 'IndexPage'
-})
 </script>
