@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col items-center justify-center">
-    <q-btn
+    <!-- <q-btn
       outline
       color="primary"
       label="Ready Player Me"
       @click="displayIframe"
-    />
+    /> -->
     <!-- <p id="avatarUrl">Avatar URL: {{ avatarUrl }}</p> -->
 
     <iframe id="frame" class="frame" :src="frameSrc" :hidden="isFrameHidden" allow="camera *; microphone *; clipboard-write"></iframe>
@@ -67,6 +67,8 @@ isFrameHidden.value = false;
 onMounted(() => {
 window.addEventListener('message', subscribe);
 document.addEventListener('message', subscribe);
+
+displayIframe();
 });
 
 onBeforeUnmount(() => {
