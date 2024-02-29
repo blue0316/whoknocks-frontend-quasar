@@ -1,0 +1,3 @@
+<template>
+  Land Page
+</template>
