@@ -8,12 +8,25 @@
     /> -->
     <!-- <p id="avatarUrl">Avatar URL: {{ avatarUrl }}</p> -->
 
-    <iframe id="frame" class="frame" :src="frameSrc" :hidden="isFrameHidden" allow="camera *; microphone *; clipboard-write"></iframe>
+    <iframe id="frame" class="shadow-20 frame" src="http://localhost:8080" :hidden="isFrameHidden" allow="camera *; microphone *; clipboard-write"></iframe>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
 
 let subdomain = 'demo'; // Replace with your custom subdomain
 let avatarUrl = ref('');
@@ -86,7 +99,6 @@ body,
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, sans-serif;
-  padding: 20px;
   font-size: 14px;
   border: none;
 }
