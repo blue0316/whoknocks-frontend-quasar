@@ -1,7 +1,7 @@
 import MainLayout from 'src/layouts/MainLayout.vue'
 import AvatarPage from 'src/pages/AvatarPage.vue'
 import LandPage from 'src/pages/LandPage.vue'
-import ErrorNotFound from 'src/pages/ErrorNotFound.vue'
+import RegisterPage from 'src/pages/RegisterPage.vue'
 
 const routes = [
   {
@@ -9,7 +9,8 @@ const routes = [
     component: MainLayout,
     children: [
       { path: '', component: AvatarPage },
-      { path: 'land', component: LandPage }
+      { path: 'land', component: LandPage },
+      { path: 'register', component: RegisterPage}
     ]
   },
 
