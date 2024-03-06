@@ -16,7 +16,7 @@ const linksList = [
   },
   {
     title: 'Lands',
-    caption: 'Buy a piece of land',
+    caption: 'Buy a land',
     icon: 'landscape',
     link: '/land'
   }
@@ -28,7 +28,9 @@ function toggleLeftDrawer() {
 </script>
 <template>
 <q-layout view="lHh Lpr lFf">
-  <q-header elevated>
+  <q-header 
+  style="background-color: #15161f;"
+  elevated>
     <q-toolbar>
       <q-btn
         flat
@@ -44,10 +46,10 @@ function toggleLeftDrawer() {
 
       <div>
         <q-btn
-          flat
-          dense
-          round
-          icon="login"
+          class="q-my-md"
+          color="secondary"
+          label="Login"
+          text-color="black"
           aria-label="login"
           @click="loginView.openLogin()"
         />
@@ -56,17 +58,13 @@ function toggleLeftDrawer() {
   </q-header>
 
   <q-drawer
+    style="background-color: #21222a;"
     v-model="leftDrawerOpen"
     show-if-above
-    bordered
   >
-    <q-list>
-      <q-item-label
-        header
-      >
-        Essential Links
-      </q-item-label>
-
+    <q-list 
+      class="q-mt-md"
+    >
       <EssentialLink
         v-for="link in linksList"
         :key="link.title"
