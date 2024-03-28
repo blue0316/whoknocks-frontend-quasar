@@ -28,18 +28,13 @@ function toggleLeftDrawer() {
 </script>
 <template>
 <q-layout view="lHh Lpr lFf">
+  
+  
   <q-header 
   style="background-color: #15161f;"
   elevated>
     <q-toolbar>
-      <q-btn
-        flat
-        dense
-        round
-        icon="menu"
-        aria-label="Menu"
-        @click="toggleLeftDrawer"
-      />
+
       <q-toolbar-title>
 
       </q-toolbar-title>
@@ -53,14 +48,23 @@ function toggleLeftDrawer() {
           aria-label="login"
           @click="loginView.openLogin()"
         />
+        <q-btn
+          flat
+          dense
+          round
+          icon="menu"
+          aria-label="Menu"
+          @click="toggleLeftDrawer"
+        />
       </div>
     </q-toolbar>
   </q-header>
 
   <q-drawer
+    side="right"
     style="background-color: #21222a;"
     v-model="leftDrawerOpen"
-    show-if-above
+    overlay
   >
     <q-list 
       class="q-mt-md"
@@ -77,5 +81,5 @@ function toggleLeftDrawer() {
     <router-view />
   </q-page-container>
 </q-layout>
-<LoginCard v-bind="open = loginOpen" />
+<LoginCard />
 </template>
