@@ -7,6 +7,7 @@ import { api } from 'src/boot/axios'
 const mail = ref('')
 const password = ref('')
 const passwordValidation = ref('')
+const isLoading = ref(false)
 const isPwd = ref(true)
 const isPwd2 = ref(true)
 
@@ -25,6 +26,22 @@ function validatePassword(password) {
 
   return validPasswordLength.value && validPasswordCapital.value && validPasswordNumber.value && validPasswordSymbol.value;
 }
+
+async function register() {
+  isLoading.value = true
+  try {
+    const data = await api.post('/auth/local/register', {
+      username: mail.value,
+      password: password.value,
+      email: mail.value
+    })
+    console.log(data)
+    isLoading.value = false
+  } catch(error) {
+    console.error(error)
+    isLoading.value = false
+  }
+}
 </script>
 <template>
 <q-form 
@@ -37,7 +54,7 @@ function validatePassword(password) {
     type="email" 
     v-model="mail" 
     label="mail *" 
-    hint="Inserisci la tua mail." 
+    hint="Insert your mail." 
     lazy-rules
     :rules="[ (val, rules) => rules.email(val) || 'Insert a valid mail.']" 
   />
@@ -74,11 +91,6 @@ function validatePassword(password) {
       />
     </template>
   </q-input>
-  <div 
-    v-show="error"
-  >
-    <p class="worning-text">Utente già registrato.</p>
-  </div>
   <div class="password-criteria q-pa-xm">
     <div>
       <q-icon
