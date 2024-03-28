@@ -8,7 +8,7 @@
     /> -->
     <!-- <p id="avatarUrl">Avatar URL: {{ avatarUrl }}</p> -->
 
-    <iframe id="frame" class="shadow-20 frame" src="http://localhost:8080" :hidden="isFrameHidden" allow="camera *; microphone *; clipboard-write"></iframe>
+    <iframe id="frame" class="shadow-20 frame" src="https://avatar.metaarise.com" :hidden="isFrameHidden" allow="camera *; microphone *; clipboard-write"></iframe>
   </div>
 </template>
 
