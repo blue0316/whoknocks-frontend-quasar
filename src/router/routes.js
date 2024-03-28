@@ -11,7 +11,8 @@ const routes = [
     children: [
       { path: '', component: LandingPage },
       { path: 'land', component: LandPage },
-      { path: 'register', component: RegisterPage}
+      { path: 'register', component: RegisterPage },
+      { path: 'avatar', component: AvatarPage }
     ]
   },
 
