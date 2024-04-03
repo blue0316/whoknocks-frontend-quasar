@@ -3,6 +3,8 @@ import LandingPage from 'src/pages/LandingPage.vue'
 import AvatarPage from 'src/pages/AvatarPage.vue'
 import LandPage from 'src/pages/LandPage.vue'
 import RegisterPage from 'src/pages/RegisterPage.vue'
+import FqaPage from 'src/pages/FqaPage.vue'
+import SupportPage from 'src/pages/SupportPage.vue'
 
 const routes = [
   {
@@ -12,7 +14,9 @@ const routes = [
       { path: '', component: LandingPage },
       { path: 'land', component: LandPage },
       { path: 'register', component: RegisterPage },
-      { path: 'avatar', component: AvatarPage }
+      { path: 'avatar', component: AvatarPage },
+      { path: 'fqa', component: FqaPage},
+      { path: 'support', component: SupportPage }
     ]
   },
 
