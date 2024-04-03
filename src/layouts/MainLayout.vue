@@ -1,44 +1,35 @@
 <script setup>
 import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
 import LoginCard from 'src/components/LoginCard.vue'
 import { useLoginViewStore } from 'src/stores/login-view'
+import { useScrollStore } from 'src/stores/scroll-store.js'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const loginView = useLoginViewStore()
-const rightDrawerOpen = ref(false)
 
-const linksList = [
-  {
-    title: 'Avatar',
-    caption: 'Customize your avatar',
-    icon: 'face',
-    link: '/'
-  },
-  {
-    title: 'Lands',
-    caption: 'Buy a land',
-    icon: 'landscape',
-    link: '/land'
-  }
-]
+const scrollStore = useScrollStore()
+
+const rightDrawerOpen = ref(false)
 
 function toggleLeftDrawer() {
   rightDrawerOpen.value = !rightDrawerOpen.value
 }
+
+function moveToSection(section) {
+	const currentRoute = router.currentRoute.value.path
+
+	if (currentRoute === '/') {
+		scrollStore.setSection(section)
+	} else {
+		router.push({ path: '/', hash: '#' + section })
+	}
+}
 </script>
 <template>
 <q-layout view="lHh Lpr lFf">
-  
-      <!-- <q-btn
-      class="q-my-md"
-      color="secondary"
-      label="Login"
-      text-color="black"
-      aria-label="login"
-      @click="loginView.openLogin()"
-    /> -->
 <div 
-	class="row justify-between q-mt-md q-mb-md q-ml-md q-mr-md"
+	class="row justify-between q-pt-md q-pb-md q-pl-md q-pr-md header-bg"
 	style="position: fixed; top: 0; right: 0; left:0; z-index: 9999; display: flex; align-items: center;">
 	<div
 	  class="col-4"
@@ -49,7 +40,6 @@ function toggleLeftDrawer() {
 			alt="logo"
 		/>
 	</div>
-
 	<div
 		class="col-4"
 		style="display: flex; justify-content: center; align-items: center;"
@@ -65,8 +55,8 @@ function toggleLeftDrawer() {
 		style="display: flex; justify-content: flex-end; align-items: center;"
 	>
 		<q-btn
+			style="margin-right: 45px;"
 			size="20px"
-			class=""
 			color="primary"
 			text-color="white"
 			dense
@@ -85,10 +75,10 @@ function toggleLeftDrawer() {
   style="background-color: #86ECE9;"
   v-model="rightDrawerOpen"
   overlay
-	width=450
+  width=450
 >
   <q-list 
-  class="q-mt-md"
+	style="margin-right: 40px; margin-top: 40px;"
   >
    <div
 	 	style="height: 55px;"
@@ -97,95 +87,106 @@ function toggleLeftDrawer() {
    </div>
    <!-- Login -->
 	 <div
-	 	class="q-mr-xl"
+	 	class="q-mr-md"
 	 >
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
-			 Login
-		 </q-item-section>
+		 <q-item>
+			<q-item-section 
+				class="text-h4 hover-effect cursor-pointer" 
+				style="text-align: right; color: white"
+				@click="loginView.openLogin"
+				clicable
+			>
+				Login
+		 	</q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="router.push('/land')"
+		>
 			 World Map
 		 </q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="router.push('/fqa')"
+		>
 			 F.Q.A
 		 </q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="router.push('/support')"
+		>
 			 Support
 		 </q-item-section>
 		 </q-item>
 
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-			 class="q-mt-xl"
-		 >
-		 <q-item-section class="text-h2" style="text-align: right; color: white">
-			 METAARISE
+		 <q-item class="q-mt-xl">
+		 <q-item-section 
+		 	class="text-h2 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('home')"
+		>
+			 METARISE
 		 </q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			 style="text-align: right; color: white"
+			 @click="moveToSection('chainlight-city')"
+		>
 			 CHAINLIGHT CITY
 		 </q-item-section>
 		 </q-item>  
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('live-play-earn')"
+		>
 			 LIVE, PLAY, EARN
 		 </q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+			class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('be-your-self')"
+		>
 			 BE YOUR SELF
 		 </q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
-		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('community')"
+		>
 			 COMMUNITY 
 		 </q-item-section>
 		 </q-item>
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('roadmap')"
 		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
 			 ROADMAP
 		 </q-item-section>
 		 </q-item> 
-		 <q-item
-			 clickable
-			 @click="loginView.openLogin"
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('contact')"
 		 >
-		 <q-item-section class="text-h4" style="text-align: right; color: white">
 			 CONTACT
 		 </q-item-section>
 		 </q-item> 
@@ -198,3 +199,11 @@ function toggleLeftDrawer() {
 </q-layout>
 <LoginCard />
 </template>
+<style scoped>
+.hover-effect:hover {
+  color: #967BF8 !important;
+}
+.header-bg {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%);
+}
+</style>
