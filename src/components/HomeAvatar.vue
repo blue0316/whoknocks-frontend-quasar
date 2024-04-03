@@ -21,7 +21,7 @@
 	<div class="q-mt-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
 	</div>
-<img src="src/assets/avatar_home.png" alt="" style="height: 683px; object-fit: contain; width: 100%;"/>
+<img src="src/assets/avatar_home.png" alt="" style="height: 100%; object-fit: contain; margin-top: 30px"/>
 </div>
 </template>
 <style scoped>
@@ -31,7 +31,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Adjust as needed */
+    min-height: 100vh; /* Adjust as needed */
     width: 100%; /* Adjust as needed */
     position: relative;
 }
