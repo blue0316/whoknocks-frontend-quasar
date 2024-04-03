@@ -7,12 +7,12 @@
         <div class="text-center col-12" style="font-size: 50px; line-height: 1; color: white; font-weight: bolder; margin-top: 100px;">
             A <span style="color: #86ECE9;">LIVE</span> <br> CHAPTER FOR
         </div>
-        <div class="q-mt-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
+        <div class="q-ma-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
         </div>
         <div class="q-mt-lg row justify-center align-center">
             <q-card
-                class="col-3 my-card q-ma-lg hover-effetct"
+                class="col-sm-10 col-md-5 col-lg-3 my-card q-ma-md hover-effetct"
                 square
                 style="border-bottom: 5px solid #86ECE9;"
             >
@@ -21,7 +21,7 @@
                 </q-card-section>
             </q-card>
             <q-card
-                class="col-3 my-card q-ma-lg hover-effetct"
+                class="col-sm-10 col-md-5 col-lg-3 my-card q-ma-md hover-effetct"
                 square
                 style="border-bottom: 5px solid #86ECE9;"
             >
@@ -30,7 +30,7 @@
                 </q-card-section>
             </q-card>
             <q-card
-                class="col-3 my-card q-ma-lg hover-effetct"
+                class="col-sm-10 col-md-5 col-lg-3 my-card q-ma-md hover-effetct"
                 square
                 style="border-bottom: 5px solid #86ECE9;"
             >
@@ -44,7 +44,7 @@
                 <div class="text-center" style="font-size: 50px; line-height: 1; color: white; font-weight: bolder;">
                     OUR <span style="color: #86ECE9;">PARTNERS</span>
                 </div>
-                <div class="q-mt-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
+                <div class="q-ma-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
                 </div>
             </div>
@@ -71,7 +71,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Adjust as needed */
+    min-height: 100vh; /* Adjust as needed */
     width: 100%; /* Adjust as needed */
     position: relative; 
 }
