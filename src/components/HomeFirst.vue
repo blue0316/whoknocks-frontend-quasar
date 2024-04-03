@@ -2,18 +2,17 @@
 import { onMounted, onUnmounted } from 'vue';
 import LocomotiveScroll from 'locomotive-scroll';
 
-onMounted(() => {
-    scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        multiplier: .2
-        // Add more options as needed
-    });
-});
+// onMounted(() => {
+//     scroll = new LocomotiveScroll({
+//         el: document.querySelector('[data-scroll-container]'),
+//         smooth: true,
+//         smartphone: {
+//           smooth: true,
+//         },
+//         // Add more options as needed
+//     });
+// });
 
-onUnmounted(() => {
-    scroll.destroy();
-});
 </script>
 <template>
 <div class="background">
