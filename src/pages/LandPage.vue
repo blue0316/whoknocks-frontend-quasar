@@ -10,9 +10,9 @@
     >
       <q-card>
         <q-card-section>
-          <q-card-title>
+          <div>
             Buy this Land: ID - {{ clickedSquare }}
-          </q-card-title>
+          </div>
         </q-card-section>
         <q-card-section>
           <q-btn
@@ -51,6 +51,9 @@ const closeLandDialog = () => {
 .map {
   display: flex;
   flex-wrap: wrap;
+  height: 1080px;
+  width: 1080px;  
+  margin: 50px;
 }
 
 .square {
