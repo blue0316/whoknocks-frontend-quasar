@@ -186,15 +186,15 @@ const layout = computed(() => {
 }
 
 .roadmap {
-    font-size: 100px;
-    font-weight: bolder;
+    font-size: 80px;
+    font-weight: 800;
     color: white;
     margin-left: 40px;
     margin-top: 50px;
 }
 .roadmap-min {
-    font-size: 50px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: 800;
     color: white;
     margin-top: 50px;
 }
