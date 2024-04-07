@@ -24,6 +24,8 @@ function moveToSection(section) {
 	} else {
 		router.push({ path: '/', hash: '#' + section })
 	}
+
+	rightDrawerOpen.value = false
 }
 </script>
 <template>
@@ -32,10 +34,9 @@ function moveToSection(section) {
 	class="row justify-between q-pt-md q-pb-md q-pl-md q-pr-md header-bg"
 	style="position: fixed; top: 0; right: 0; left:0; z-index: 9999; display: flex; align-items: center;">
 	<div
-	  class="col-4"
+	  class="col-4 gt-xs"
 	>
 		<img 
-			class=""
 			src="src/assets/metarise_logo_extended.png" 
 			alt="logo"
 		/>
@@ -45,9 +46,10 @@ function moveToSection(section) {
 		style="display: flex; justify-content: center; align-items: center;"
 	>
 	<img 	
-		class="	"
+		class="cursor-pointer" 
 		src="src/assets/metarise_logo.svg" 
 		alt="Logo" 
+		@click="moveToSection('home')"
 	/>
 	</div>
 	<div
