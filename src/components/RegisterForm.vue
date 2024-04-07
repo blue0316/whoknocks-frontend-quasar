@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue' 
-import { api } from 'src/boot/axios'
+import { api } from '../boot/axios'
 
 // CONSTANTS //
 

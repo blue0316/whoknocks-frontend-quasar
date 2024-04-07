@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { useLoginViewStore } from 'src/stores/login-view'
+import { useLoginViewStore } from '../stores/login-view'
 import { ethers } from 'ethers'
 
 // CONSTANTS //

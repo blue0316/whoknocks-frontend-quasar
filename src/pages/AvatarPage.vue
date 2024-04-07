@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import ReadyPlayerMe from 'src/components/ReadyPlayerMe.vue';
+import ReadyPlayerMe from '../components/ReadyPlayerMe.vue';
 
 </script>
 <style scoped>

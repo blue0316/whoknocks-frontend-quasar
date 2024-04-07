@@ -8,17 +8,15 @@ const slide = ref(1)
   <div class="background">
     <div class="container">
       <div class="marquee marquee1">
-        <span style="font-size: 250px; font-weight: 800;">LIVE LIVE PLAY PLAY BUSINESS BUILD </span>
+        <span style="font-size: 250px; font-weight: 800;">LIVE LIVE PLAY PLAY BUSINESS BUILD BRANDS</span>
       </div>
       <div class="marquee marquee2">
-        <span style="font-size: 250px; font-weight: 800;">LIVE LIVE PLAY PLAY BUSINESS BUILD </span>
+        <span style="font-size: 250px; font-weight: 800;">LIVE LIVE PLAY PLAY BUSINESS BUILD BRANDS</span>
       </div>
     </div>
     <q-carousel
       v-model="slide"
       swipeable
-      transition-prev="slide-right"
-      transition-next="slide-left"
       animated
       padding
       arrows
@@ -85,6 +83,23 @@ const slide = ref(1)
               A land in Metarise is the starting point for creating your dream villa, 
               your office or your own mini-game where you can host other users. 
               Thanks to the advanced building system, no particular modeling and programming skills are necessary.
+            </div>
+          </div>
+          </div>
+        </q-scroll-area>
+      </q-carousel-slide>
+      <q-carousel-slide :name="5" img-src="../assets/carousel/slide_brands.png">
+        <q-scroll-area class="fit" style="position: relative">
+          <div class="text-center carousel-position">
+            <div class="carousel-title-text gt-xs">FOR BRANDS</div>
+            <div class="carousel-title-text-small lt-sm">FOR BRANDS</div>
+            <div style="display: flex; justify-content: center;">
+            <div class="carousel-text">
+              Metarise is an exciting metaverse for brands, combining gaming, social interaction, 
+              and user-generated content. It offers a new marketing tool for brands to enhance their identity, 
+              involve users in immersive experiences, and increase awareness and engagement. 
+              The metaverse provides unique and interactive ways for brands to connect with their target audience, 
+              tracking and targeting their digital touchpoints.
             </div>
           </div>
           </div>

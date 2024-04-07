@@ -13,14 +13,34 @@
         <div class="text-small col-12 text-center lt-md">
             FOLLOW US
         </div>
-        <q-input class="col-6 q-ma-md" v-model="email" filled type="email" bg-color="white" square/>
+        <!-- <q-input class="col-6 q-ma-md" v-model="email" filled type="email" bg-color="white" square/>
         <q-btn 
             class="col-6 col-md-2 q-ma-md"
             style="border-radius: 120px;"
             color="primary"
             text-color="white"
             label="submit"
-        />
+        /> -->
+        <div class="col-3 text-center q-mt-md">
+            <a href="https://t.me/metariseworld" target="_blank">
+                <img src="../assets/social_icons/telegram.svg" alt="telegram">
+            </a>
+        </div>
+        <div class="col-3 text-center q-mt-md">
+            <a href="https://www.facebook.com/profile.php?id=61557032901757" target="_blank"> 
+            <img src="../assets/social_icons/facebook.svg" alt="facebook">
+        </a>
+        </div>
+        <div class="col-3 text-center q-mt-md">
+            <a href="https://www.instagram.com/m20metarise/" target="_blank">
+                <img src="../assets/social_icons/instagram.svg" alt="instagram">
+            </a>
+        </div>
+        <div class="col-3 text-center q-mt-md">
+            <a href="https://twitter.com/metariseworld" target="_blank">
+                <img src="../assets/social_icons/x.svg" alt="x">
+            </a>
+        </div>
     </div>
     </div>
 </template>

@@ -79,7 +79,7 @@ const closeLandDialog = () => {
 
 <style scoped>
 .map {
-  background-image: url('/src/assets/test/2DMapTest.png');
+  background-image: url('../assets/test/2DMapTest.png');
   background-size: cover;
   display: flex;
   flex-wrap: wrap;

@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
-import LoginCard from 'src/components/LoginCard.vue'
-import { useLoginViewStore } from 'src/stores/login-view'
-import { useScrollStore } from 'src/stores/scroll-store.js'
+import LoginCard from '../components/LoginCard.vue'
+import { useLoginViewStore } from '../stores/login-view'
+import { useScrollStore } from '../stores/scroll-store.js'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -37,7 +37,7 @@ function moveToSection(section) {
 	  class="col-4 gt-xs"
 	>
 		<img 
-			src="src/assets/metarise_logo_extended.png" 
+			src="../assets/metarise_logo_extended.png" 
 			alt="logo"
 		/>
 	</div>
@@ -47,7 +47,7 @@ function moveToSection(section) {
 	>
 	<img 	
 		class="cursor-pointer" 
-		src="src/assets/metarise_logo.svg" 
+		src="../assets/metarise_logo.svg" 
 		alt="Logo" 
 		@click="moveToSection('home')"
 	/>
@@ -93,33 +93,33 @@ function moveToSection(section) {
 	 >
 		 <q-item>
 			<q-item-section 
-				class="text-h4 hover-effect cursor-pointer" 
-				style="text-align: right; color: white"
-				@click="loginView.openLogin"
-				clicable
-			>
+				class="text-h4 cursor-pointer" 
+				style="text-align: right; color: gray"
+				>
+				<!-- @click="loginView.openLogin" -->
+				<!-- clicable -->
 				Login
 		 	</q-item-section>
 		 </q-item>
 		 <q-item>
 		 <q-item-section 
-		 	class="text-h4 hover-effect cursor-pointer" 
-			style="text-align: right; color: white"
-			@click="router.push('/land')"
-		>
+		 	class="text-h4 cursor-pointer" 
+			style="text-align: right; color: gray"
+			>
+			<!-- @click="router.push('/land')" -->
 			 World Map
 		 </q-item-section>
 		 </q-item>
 		 <q-item>
 		 <q-item-section 
-		 	class="text-h4 hover-effect cursor-pointer" 
-			style="text-align: right; color: white"
-			@click="router.push('/fqa')"
-		>
+		 	class="text-h4 cursor-pointer" 
+			style="text-align: right; color: gray"
+			>
+			<!-- @click="router.push('/fqa')" -->
 			 F.Q.A
 		 </q-item-section>
 		 </q-item>
-		 <q-item>
+		 <!-- <q-item>
 		 <q-item-section 
 		 	class="text-h4 hover-effect cursor-pointer" 
 			style="text-align: right; color: white"
@@ -127,7 +127,7 @@ function moveToSection(section) {
 		>
 			 Support
 		 </q-item-section>
-		 </q-item>
+		 </q-item> -->
 
 		 <q-item class="q-mt-xl">
 		 <q-item-section 

@@ -1,5 +1,5 @@
-import MainLayout from 'src/layouts/MainLayout.vue'
-import LandingPage from 'src/pages/LandingPage.vue'
+import MainLayout from '../layouts/MainLayout.vue'
+import LandingPage from '../pages/LandingPage.vue'
 import AvatarPage from 'src/pages/AvatarPage.vue'
 import LandPage from 'src/pages/LandPage.vue'
 import RegisterPage from 'src/pages/RegisterPage.vue'
@@ -12,11 +12,11 @@ const routes = [
     component: MainLayout,
     children: [
       { path: '', component: LandingPage },
-      { path: 'land', component: LandPage },
-      { path: 'register', component: RegisterPage },
-      { path: 'avatar', component: AvatarPage },
-      { path: 'fqa', component: FqaPage},
-      { path: 'support', component: SupportPage }
+      // { path: 'land', component: LandPage },
+      // { path: 'register', component: RegisterPage },
+      // { path: 'avatar', component: AvatarPage },
+      // { path: 'fqa', component: FqaPage},
+      // { path: 'support', component: SupportPage }
     ]
   },
 

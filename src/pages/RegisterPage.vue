@@ -1,5 +1,5 @@
 <script setup>
-import RegisterForm from 'src/components/RegisterForm.vue';
+import RegisterForm from '../components/RegisterForm.vue';
 </script>
 <template>
   <q-page class="flex flex-center background ">

@@ -11,167 +11,150 @@ const layout = computed(() => {
     <div 
     class="background row justify-center flex items-center"
     >
-        <div class="col-12 roadmap gt-sm">
+        <div class="col-12 roadmap-min lt-lg text-center">
             ROADMAP
         </div>
-        <div class="col-12 roadmap-min lt-md text-center">
-            ROADMAP
-        </div>
-            <div 
-                class="col-md-6 col-sm-12 text-center"
-            >
-                <iframe
-                    class="gt-sm"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=A0WsuqmCJtztaCpO"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-                <iframe
-                    class="lt-md"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=A0WsuqmCJtztaCpO"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
+        <div class="col-md-6 col-sm-12 gt-md text-center" style="align-self: flex-start;">
+            <div class="col-12 roadmap" style="margin-bottom: 20px; margin-top: 80px">
+                ROADMAP
             </div>
-            <div class="col-6 gt-sm q-ma-md" style="max-width: 500px;">
-                <q-timeline :layout="layout" color="white">
-                    <q-timeline-entry
+                    
+            <img src="../assets/block_metarise.png" alt="metarise_block" style="width: 70%;">
+        </div>
+        <div class="col-6 gt-sm q-ma-md" style="max-width: 500px;">
+            <q-timeline :layout="layout" color="white">
+                <q-timeline-entry
+                style="color: white;"
+                title="METARISE ANNOUNCEMENT"
+                subtitle="Q4 2023"
+                side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="START OF WORLD BUILDING"
+                    subtitle="Q4 2023"
+                    side="left"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="EXLUSIVE AVATAR ASSETS"
+                    subtitle="Q4 2023"
+                    side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="LAND SALES OPEN"
+                    subtitle="Q1 2024"
+                    side="left"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="OFFICIAL WEB PLATFORM RELEASE"
+                    subtitle="Q3 2024"
+                    side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="VEICHLES DEPLOY"
+                    subtitle="Q4 2024"
+                    side="left"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="ASSET BUILDER RELEASE"
+                    subtitle="Q1 2025"
+                    side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="GAME BUILDER RELEASE"
+                    subtitle="Q2 2025"
+                    side="left"
+                >
+                </q-timeline-entry>
+            </q-timeline>
+        </div>
+        <div class="col-6 lt-md q-ma-md" style="max-width: 500px;">
+            <q-timeline :layout="layout" color="white">
+                <q-timeline-entry
+                style="color: white;"
+                title="METARISE ANNOUNCEMENT"
+                subtitle="Q4 2023"
+                side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="START OF WORLD BUILDING"
+                    subtitle="Q4 2023"
+                    side="left"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="EXLUSIVE AVATAR ASSETS"
+                    subtitle="Q4 2023"
+                    side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="VEICHLES DEPLOY"
+                    subtitle="Q4 2023"
+                    side="left"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="BUILDING SYSTEM"
+                    subtitle="Q4 2023"
+                    side="right"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
+                    style="color: white;"
+                    title="MATARISEFULL FULL ONLINE"
+                    subtitle="Q4 2023"
+                    side="left"
+                >
+                </q-timeline-entry>
+
+                <q-timeline-entry
                     style="color: white;"
                     title="METARISE ANNOUNCEMENT"
                     subtitle="Q4 2023"
                     side="right"
-                    >
-                    </q-timeline-entry>
+                >
+                </q-timeline-entry>
 
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="START OF WORLD BUILDING"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="EXLUSIVE AVATAR ASSETS"
-                        subtitle="Q4 2023"
-                        side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="VEICHLES DEPLOY"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="BUILDING SYSTEM"
-                        subtitle="Q4 2023"
-                        side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="MATARISEFULL FULL ONLINE"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="METARISE ANNOUNCEMENT"
-                        subtitle="Q4 2023"
-                        side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="METARISE ANNOUNCEMENT"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-                </q-timeline>
-            </div>
-            <div class="col-6 lt-md q-ma-md" style="max-width: 500px;">
-                <q-timeline :layout="layout" color="white">
-                    <q-timeline-entry
+                <q-timeline-entry
                     style="color: white;"
                     title="METARISE ANNOUNCEMENT"
                     subtitle="Q4 2023"
-                    side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="START OF WORLD BUILDING"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="EXLUSIVE AVATAR ASSETS"
-                        subtitle="Q4 2023"
-                        side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="VEICHLES DEPLOY"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="BUILDING SYSTEM"
-                        subtitle="Q4 2023"
-                        side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="MATARISEFULL FULL ONLINE"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="METARISE ANNOUNCEMENT"
-                        subtitle="Q4 2023"
-                        side="right"
-                    >
-                    </q-timeline-entry>
-
-                    <q-timeline-entry
-                        style="color: white;"
-                        title="METARISE ANNOUNCEMENT"
-                        subtitle="Q4 2023"
-                        side="left"
-                    >
-                    </q-timeline-entry>
-                </q-timeline>
-            </div>
-
+                    side="left"
+                >
+                </q-timeline-entry>
+            </q-timeline>
+        </div>
     </div>
 </template>
 <style scoped>

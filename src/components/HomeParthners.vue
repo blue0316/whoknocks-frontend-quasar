@@ -2,7 +2,7 @@
 </script>
 <template>
 <div class="background">
-    <img class="under-div" src="src/assets/m20_coint.png" alt="coin;">
+    <img class="under-div" src="../assets/m20_coint.png" alt="coin;">
     <div class="over-div row justify-center align-center">
         <div class="text-center title-text col-12 gt-xs" style="margin-top: 100px;">
             UNLOCK LIMITLESS <span style="color: #86ECE9;"> <br> POSSIBILITIES</span>

@@ -101,7 +101,7 @@ const router = useRouter();
 <style scoped>
     /* Set bg to src/assets/backgrounds/Bar_Under_Tower_2_1.png */
     .background {
-        background: url('/src/assets/backgrounds/02_home_bg.png');
+        background: url('../assets/backgrounds/02_home_bg.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
