@@ -4,12 +4,15 @@
 <div class="background">
     <img class="under-div" src="src/assets/m20_coint.png" alt="coin;">
     <div class="over-div row justify-center align-center">
-        <div class="text-center col-12" style="font-size: 50px; line-height: 1; color: white; font-weight: bolder; margin-top: 100px;">
-            A <span style="color: #86ECE9;">LIVE</span> <br> CHAPTER FOR
+        <div class="text-center title-text col-12 gt-xs" style="margin-top: 100px;">
+            UNLOCK LIMITLESS <span style="color: #86ECE9;"> <br> POSSIBILITIES</span>
         </div>
-        <div class="q-ma-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
+        <div class="text-center title-text-small col-12 lt-sm" style="margin-top: 100px;">
+            UNLOCK LIMITLESS <span style="color: #86ECE9;"> <br> POSSIBILITIES</span>
+        </div>
+        <!-- <div class="q-ma-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
-        </div>
+        </div> -->
         <div class="q-mt-lg row justify-center align-center">
             <q-card
                 class="col-sm-10 col-md-5 col-lg-3 my-card q-ma-md hover-effetct"
@@ -17,7 +20,28 @@
                 style="border-bottom: 5px solid #86ECE9;"
             >
                 <q-card-section>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. 
+                    <div class="card-text-title text-center">
+                        IN-HOUSE DEVELOPMENT
+                    </div>
+                    <div class="text-center">
+                        By leveraging cutting-edge technologies our Company owns 
+                        the in-house developed technology, curated by our team of skilled developers.
+                    </div>
+                </q-card-section>
+            </q-card>
+            <q-card
+                class="col-sm-10 col-md-5 col-lg-3 my-card q-ma-md q-mt-md hover-effetct"
+                square
+                style="border-bottom: 5px solid #86ECE9;"
+            >
+            <q-card-section>
+                    <div class="card-text-title text-center">
+                        A COMMUNITY-CENTRIC WORLD
+                    </div>
+                    <div class="text-center">
+                        Get the chance to own a piece of Metarise land by purchasing a unique NFT minted on the M20 blockchain, 
+                        and develop your own virtual project. The community will have a fundamental impact on future updates.
+                    </div>
                 </q-card-section>
             </q-card>
             <q-card
@@ -25,38 +49,53 @@
                 square
                 style="border-bottom: 5px solid #86ECE9;"
             >
-                <q-card-section>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. 
-                </q-card-section>
-            </q-card>
-            <q-card
-                class="col-sm-10 col-md-5 col-lg-3 my-card q-ma-md hover-effetct"
-                square
-                style="border-bottom: 5px solid #86ECE9;"
-            >
-                <q-card-section>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. 
+            <q-card-section>
+                    <div class="card-text-title text-center">
+                        POWERED BY M20 CHAIN
+                    </div>
+                    <div class="text-center">
+                        Metarise is fueled by its official cryptocurrency, extending its utility far beyond transactions, 
+                        captivating users in a web3 in a new economy of endless possibilities.
+                    </div>
                 </q-card-section>
             </q-card>
         </div>
         <div class="row justify-center align-center" style="margin-top: 80px;">
             <div>
-                <div class="text-center" style="font-size: 50px; line-height: 1; color: white; font-weight: bolder;">
-                    OUR <span style="color: #86ECE9;">PARTNERS</span>
+                <div class="text-center title-text gt-xs" >
+                    OUR <span class="gradient-text">PARTNERS</span>
                 </div>
-                <div class="q-ma-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                <div class="text-center title-text-small lt-sm" >
+                    OUR <span class="gradient-text">PARTNERS</span>
+                </div>
+                <div class="q-ma-md" style="font-size: 18px; color: white; max-width: 700px;">
+                    A dense network of partners has already chosen to enter the Metarise metaverse with their 
+                    own offices and virtual stores, to go beyond the physical limits and create new engaging business experiences.
                 </div>
             </div>
-            <div class="row justify-center align-center">
+            <div class="row justify-center align-center"
+                style="margin-bottom: 50px;"
+            >
                 <div>
-                    <div class="q-pa-sm" v-for="n in 4" :key="n">
-                        <img src="src/assets/partner.png" alt="">
+                    <div class="q-pa-sm text-center">
+                        <img src="../assets/logos/m20chain.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center">
+                        <img src="../assets/logos/mochee.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center">
+                        <img src="../assets/logos/noble_vines.svg" alt="">
                     </div>
                 </div>
                 <div>
-                    <div class="q-pa-sm" v-for="n in 4" :key="n">
-                        <img src="src/assets/partner.png" alt="">
+                    <div class="q-pa-sm text-center">
+                        <img src="../assets/logos/esquare_legal.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center">
+                        <img src="../assets/logos/big_byte.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center">
+                        <img src="../assets/logos/kangaroo.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -99,5 +138,36 @@
 .my-card {
     background-color: #2C2C2C;
     color: white;
+}
+
+.title-text {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.title-text-small {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.card-text-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #967BF8, #86ECE9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
