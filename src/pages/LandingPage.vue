@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, watch } from 'vue';
+import { onMounted, onUnmounted, watch } from 'vue';
 import { useScrollStore } from 'src/stores/scroll-store';
 import LocomotiveScroll from 'locomotive-scroll';
 import HomeFirst from 'src/components/HomeFirst.vue';
@@ -57,8 +57,16 @@ onMounted(() => {
     scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        multiplier: .2
+        multiplier: .8,
+        smartphone: {   
+            smooth: true,
+        },
+        reloadOnContextChange: true,
         // Add more options as needed
     });
+});
+
+onUnmounted(() => {
+    scroll.destroy();
 });
 </script>
