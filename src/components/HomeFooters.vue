@@ -35,15 +35,15 @@
         width: 100%; /* Adjust as needed */
     }
     .text {
-        font-size: 130px;
+        font-size: 100px;
         line-height: 1;
         color: white;
-        font-weight: bolder;
+        font-weight: 800;
     }
     .text-small {
-        font-size: 50px;
+        font-size: 35px;
         line-height: 1;
         color: white;
-        font-weight: bolder;
+        font-weight: 800;
     }
 </style>
