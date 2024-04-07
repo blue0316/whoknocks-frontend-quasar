@@ -1,44 +1,28 @@
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
-import LocomotiveScroll from 'locomotive-scroll';
-
-// onMounted(() => {
-//     scroll = new LocomotiveScroll({
-//         el: document.querySelector('[data-scroll-container]'),
-//         smooth: true,
-//         smartphone: {
-//           smooth: true,
-//         },
-//         // Add more options as needed
-//     });
-// });
-
 </script>
 <template>
 <div class="background">
-  <div class="row justify-center align-center" style="height: 100vh; flex-direction: column;">
-    <section data-scroll-section>
-
-		<div class="col-12">
-			<p style="font-size: 100px; color: transparent; -webkit-text-stroke: 3px white; text-align: center; margin: 0">
-				EMPOWER YOUR LIFE
-			</p>
-		</div>
-    </section>
-
-    <!-- section with different speed multiplier -->
-    <section data-scroll-section data-scroll-speed="0.5">
+  <section data-scroll-container>
+      <div class="row justify-center align-center" style="height: 100vh; flex-direction: column;">
+      <section data-scroll-section>
   
-      <div class="row justify-center">
-        <p style="font-size:50px; color: white; margin: 0">
-          in a new
+      <div class="col-12">
+        <p 
+          style="font-size: 80px; text-align: center; margin: 0; line-height: 80%; font-weight: 800;"
+          class="gt-xs"
+        >
+          EMPOWER YOUR LIFE <br> in a new REALITY
         </p>
-        <p style="font-size:80px; color: white; margin: 0">
-          REALITY
-        </p>
+        <p 
+          style="font-size: 50px; text-align: center; margin: 0; line-height: 80%;"
+          class="lt-sm q-mx-md"
+        >
+          EMPOWER YOUR LIFE <br> in a new REALITY
+        </p> 
       </div>
-    </section> 
-  </div>
+      </section>
+    </div>
+    </section>
 </div>
 </template>
 <style scoped>
