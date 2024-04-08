@@ -116,40 +116,40 @@ const layout = computed(() => {
 
                 <q-timeline-entry
                     style="color: white;"
-                    title="VEICHLES DEPLOY"
-                    subtitle="Q4 2023"
+                    title="LAND SALES OPEN"
+                    subtitle="Q1 2024"
                     side="left"
                 >
                 </q-timeline-entry>
 
                 <q-timeline-entry
                     style="color: white;"
-                    title="BUILDING SYSTEM"
-                    subtitle="Q4 2023"
+                    title="OFFICIAL WEB PLATFORM RELEASE"
+                    subtitle="Q3 2024"
                     side="right"
                 >
                 </q-timeline-entry>
 
                 <q-timeline-entry
                     style="color: white;"
-                    title="MATARISEFULL FULL ONLINE"
-                    subtitle="Q4 2023"
+                    title="VEHICLES DEPLOY"
+                    subtitle="Q4 2024"
                     side="left"
                 >
                 </q-timeline-entry>
 
                 <q-timeline-entry
                     style="color: white;"
-                    title="METARISE ANNOUNCEMENT"
-                    subtitle="Q4 2023"
+                    title="ASSET BUILDER RELEASE"
+                    subtitle="Q1 2025"
                     side="right"
                 >
                 </q-timeline-entry>
 
                 <q-timeline-entry
                     style="color: white;"
-                    title="METARISE ANNOUNCEMENT"
-                    subtitle="Q4 2023"
+                    title="GAME BUILDER RELEASE"
+                    subtitle="Q2 2025"
                     side="left"
                 >
                 </q-timeline-entry>
