@@ -65,7 +65,7 @@ const layout = computed(() => {
 
                 <q-timeline-entry
                     style="color: white;"
-                    title="VEICHLES DEPLOY"
+                    title="VEHICLES DEPLOY"
                     subtitle="Q4 2024"
                     side="left"
                 >
