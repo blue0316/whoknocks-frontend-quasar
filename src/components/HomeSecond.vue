@@ -77,7 +77,7 @@ const router = useRouter();
             POINTS OF INTERESTS
         </div>
         <div style="font-size: 70px; font-weight: bold; color: white" >
-            10.600
+            10.800
         </div>
         <div
             class="gradient-background" 
