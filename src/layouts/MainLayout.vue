@@ -178,6 +178,15 @@ function moveToSection(section) {
 		 <q-item-section 
 		 	class="text-h4 hover-effect cursor-pointer" 
 			style="text-align: right; color: white"
+			@click="moveToSection('tokenomics')"
+		 >
+			 TOKEN
+		 </q-item-section>
+		 </q-item> 
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
 			@click="moveToSection('roadmap')"
 		 >
 			 ROADMAP
