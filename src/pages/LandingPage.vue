@@ -16,6 +16,9 @@
             <section data-scroll-section id="community">
                 <HomeParthners />
             </section>
+            <section data-scroll-section id="tokenomics">
+                <HomeToken />
+            </section>
             <section data-scroll-section id="roadmap">
                 <HomeRoadMap />
             </section>
@@ -35,6 +38,7 @@ import HomeSecond from '../components/HomeSecond.vue';
 import HomeThird from '../components/HomeThird.vue'; 
 import HomeAvatar from '../components/HomeAvatar.vue';
 import HomeParthners from '../components/HomeParthners.vue';
+import HomeToken from '../components/HomeToken.vue';
 import HomeRoadMap from '../components/HomeRoadMap.vue';
 import HomeFooters from '../components/HomeFooters.vue';
 
