@@ -32,7 +32,7 @@
         </a>
         </div>
         <div class="col-3 text-center q-mt-md">
-            <a href="https://www.instagram.com/m20metarise/" target="_blank">
+            <a href="https://www.instagram.com/metariseworld?igsh=MXd3dTZhYTVpMXBtdg==" target="_blank">
                 <img src="../assets/social_icons/instagram.svg" alt="instagram">
             </a>
         </div>
