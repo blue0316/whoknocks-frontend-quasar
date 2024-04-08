@@ -38,7 +38,7 @@ const router = useRouter();
         </div>
         <div
             style="font-size: 70px; font-weight: bold;" >
-            10.600
+            10.800
         </div>
         <div
             class="gradient-background"
