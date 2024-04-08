@@ -1,8 +1,8 @@
 {
-  "name": "whoknocks-frontend-quasar",
+  "name": "Metarise",
   "version": "0.0.1",
-  "description": "The frontend application for the whoknoks metavers project.",
-  "productName": "Whoknoks Frontend Quasar",
+  "description": "Metarise Project",
+  "productName": "Metarise",
   "author": "viac92 <64146594+viac92@users.noreply.github.com>",
   "private": true,
   "scripts": {
