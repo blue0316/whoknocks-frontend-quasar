@@ -1,6 +1,6 @@
 <template>
     <q-page>
-        <div data-scroll-container>
+        <div data-scroll-container style="background-color: #212121; max-width: 100%;" >
             <section data-scroll-section id="home">
                 <HomeFirst />
             </section>
@@ -30,9 +30,8 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, watch } from 'vue';
+import { watch } from 'vue';
 import { useScrollStore } from '../stores/scroll-store';
-import LocomotiveScroll from 'locomotive-scroll';
 import HomeFirst from '../components/HomeFirst.vue';
 import HomeSecond from '../components/HomeSecond.vue';
 import HomeThird from '../components/HomeThird.vue'; 
@@ -42,7 +41,6 @@ import HomeToken from '../components/HomeToken.vue';
 import HomeRoadMap from '../components/HomeRoadMap.vue';
 import HomeFooters from '../components/HomeFooters.vue';
 
-let scroll;
 
 const scrollStore = useScrollStore();
 
@@ -51,26 +49,9 @@ watch(scrollStore, (value) => {
     console.log(value.getSection);
     const target = document.querySelector('#' + value.getSection);
 
-    scroll.scrollTo(target);
-
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
     scrollStore.setSection(null);
-});
-
-onMounted(() => {
-    
-    scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        multiplier: .8,
-        smartphone: {   
-            smooth: true,
-        },
-        reloadOnContextChange: true,
-        // Add more options as needed
-    });
-});
-
-onUnmounted(() => {
-    scroll.destroy();
 });
 </script>
