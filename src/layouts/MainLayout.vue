@@ -89,7 +89,7 @@ function moveToSection(section) {
    </div>
    <!-- Login -->
 	 <div
-	 	class="q-mr-md"
+	 	class="q-mr-md gt-sm"
 	 >
 		 <q-item>
 			<q-item-section 
@@ -195,6 +195,120 @@ function moveToSection(section) {
 		 <q-item>
 		 <q-item-section 
 		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('contact')"
+		 >
+			 CONTACT
+		 </q-item-section>
+		 </q-item> 
+	 </div>
+	 <div
+	 	class="q-mr-md lt-md"
+	 >
+		 <q-item>
+			<q-item-section 
+				class="text-h5 cursor-pointer" 
+				style="text-align: right; color: gray"
+				>
+				<!-- @click="loginView.openLogin" -->
+				<!-- clicable -->
+				Login
+		 	</q-item-section>
+		 </q-item>
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 cursor-pointer" 
+			style="text-align: right; color: gray"
+			>
+			<!-- @click="router.push('/land')" -->
+			 World Map
+		 </q-item-section>
+		 </q-item>
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 cursor-pointer" 
+			style="text-align: right; color: gray"
+			>
+			<!-- @click="router.push('/fqa')" -->
+			 F.Q.A
+		 </q-item-section>
+		 </q-item>
+		 <!-- <q-item>
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="router.push('/support')"
+		>
+			 Support
+		 </q-item-section>
+		 </q-item> -->
+
+		 <q-item class="q-mt-xl">
+		 <q-item-section 
+		 	class="text-h4 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('home')"
+		>
+			 METARISE
+		 </q-item-section>
+		 </q-item>
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 hover-effect cursor-pointer" 
+			 style="text-align: right; color: white"
+			 @click="moveToSection('chainlight-city')"
+		>
+			 CHAINLIGHT CITY
+		 </q-item-section>
+		 </q-item>  
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('live-play-earn')"
+		>
+			 LIVE, PLAY, EARN
+		 </q-item-section>
+		 </q-item>
+		 <q-item>
+		 <q-item-section 
+			class="text-h5 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('be-your-self')"
+		>
+			 BE YOUR SELF
+		 </q-item-section>
+		 </q-item>
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('community')"
+		>
+			 COMMUNITY 
+		 </q-item-section>
+		 </q-item>
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('tokenomics')"
+		 >
+			 TOKEN
+		 </q-item-section>
+		 </q-item> 
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 hover-effect cursor-pointer" 
+			style="text-align: right; color: white"
+			@click="moveToSection('roadmap')"
+		 >
+			 ROADMAP
+		 </q-item-section>
+		 </q-item> 
+		 <q-item>
+		 <q-item-section 
+		 	class="text-h5 hover-effect cursor-pointer" 
 			style="text-align: right; color: white"
 			@click="moveToSection('contact')"
 		 >
