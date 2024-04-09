@@ -11,7 +11,7 @@ const layout = computed(() => {
     <div 
     class="background row justify-center flex items-center"
     >
-        <div class="col-12 roadmap-min lt-lg text-center">
+        <div class="col-12 roadmap-min lt-lg text-center" style="margin-top: 100px;">
             ROADMAP
         </div>
         <div class="col-md-6 col-sm-12 gt-md text-center" style="align-self: flex-start;">
