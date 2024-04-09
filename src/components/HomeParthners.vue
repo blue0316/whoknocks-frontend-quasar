@@ -4,10 +4,10 @@
 <div class="background">
     <img class="under-div" src="../assets/m20_coint.png" alt="coin;">
     <div class="over-div row justify-center align-center">
-        <div class="text-center title-text col-12 gt-xs" style="margin-top: 100px;">
+        <div class="text-center text-h-desktop-extrabold col-12 gt-xs" style="margin-top: 100px;">
             UNLOCK LIMITLESS <span style="color: #86ECE9;"> <br> POSSIBILITIES</span>
         </div>
-        <div class="text-center title-text-small col-12 lt-sm" style="margin-top: 100px;">
+        <div class="text-center text-h-mobile-extrabold col-12 q-px-md lt-sm" style="margin-top: 100px; font-size: 25px;">
             UNLOCK LIMITLESS <span style="color: #86ECE9;"> <br> POSSIBILITIES</span>
         </div>
         <!-- <div class="q-ma-md text-center" style="font-size: 18px; color: white; max-width: 700px;">
@@ -62,42 +62,63 @@
         </div>
         <div class="row justify-center align-center" style="margin-top: 80px;">
             <div>
-                <div class="text-center title-text gt-xs" >
+                <div class="text-center text-h-desktop-extrabold gt-sm" >
                     OUR <span class="gradient-text">PARTNERS</span>
                 </div>
-                <div class="text-center title-text-small lt-sm" >
+                <div class="text-center text-h-mobile-extrabold lt-md" >
                     OUR <span class="gradient-text">PARTNERS</span>
                 </div>
-                <div class="q-ma-md" style="font-size: 18px; color: white; max-width: 700px;">
+                <div class="q-ma-md text-center text-p-desktop gt-sm" style="max-width: 700px;">
+                    A dense network of partners has already chosen to enter the Metarise metaverse with their 
+                    own offices and virtual stores, to go beyond the physical limits and create new engaging business experiences.
+                </div>
+                <div class="q-ma-md text-center text-p-mobile lt-md" style="max-width: 700px;">
                     A dense network of partners has already chosen to enter the Metarise metaverse with their 
                     own offices and virtual stores, to go beyond the physical limits and create new engaging business experiences.
                 </div>
             </div>
-            <div class="row justify-center align-center"
+            <div class="row justify-center align-center col-12"
                 style="margin-bottom: 50px;"
             >
-                <div>
-                    <div class="q-pa-sm text-center">
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <img src="../assets/logos/m20chain.svg" alt="">
                     </div>
-                    <div class="q-pa-sm text-center">
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <img src="../assets/logos/mochee.svg" alt="">
                     </div>
-                    <div class="q-pa-sm text-center">
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <img src="../assets/logos/noble_vines.svg" alt="">
                     </div>
-                </div>
-                <div>
-                    <div class="q-pa-sm text-center">
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/a.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/aeon.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/canary_locums.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/london_healthcare.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <img src="../assets/logos/esquare_legal.svg" alt="">
                     </div>
-                    <div class="q-pa-sm text-center">
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <img src="../assets/logos/big_byte.svg" alt="">
                     </div>
-                    <div class="q-pa-sm text-center">
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <img src="../assets/logos/kangaroo.svg" alt="">
                     </div>
-                </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/pay_express.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/sonographers.svg" alt="">
+                    </div>
+                    <div class="q-pa-sm text-center col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="../assets/logos/st_mary.svg" alt="">
+                    </div>
             </div>
         </div>
     </div>
