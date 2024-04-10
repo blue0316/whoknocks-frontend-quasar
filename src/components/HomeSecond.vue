@@ -1,17 +1,27 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { ref, onMounted } from 'vue';
+import { useQuasar } from 'quasar';
+import imgSrc from '../assets/backgrounds/02_home_bg.png';
+
+const $q = useQuasar();
+
+const startAnimation = ref(false);
 
 const router = useRouter();
 const loaded = ref(false);
 
 onMounted(() => {
   const img = new Image();
-  img.src = 'src/assets/backgrounds/02_home_bg.png';
+  img.src = imgSrc;
   console.log(img.src);
   img.onload = () => {
     loaded.value = true;
   };
+
+  setTimeout(() => {
+    startAnimation.value = true;
+  }, 2000);
 });
 </script>
 <template>
@@ -102,7 +112,15 @@ onMounted(() => {
         </div> 
     </div>
 
-    <div class="container q-mb-md">
+    <div v-if="!$q.platform.is.ios" class="container q-mb-md ">
+        <div class="marquee marquee1" style="padding-top: 8px">
+            <span style="font-size: 20px; font-weight: bold;">OPENING SOOON --- OPENING SOOON --- OPENING SOOON</span>
+        </div>
+        <!-- <div class="marquee marquee2">
+            <span style="font-size: 20px; font-weight: bold;">OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON --- OPENING SOOON ---</span>
+        </div> -->
+    </div>
+    <div v-if="$q.platform.is.ios && startAnimation" class="container q-mb-md">
         <div class="marquee marquee1" style="padding-top: 8px">
             <span style="font-size: 20px; font-weight: bold;">OPENING SOOON --- OPENING SOOON --- OPENING SOOON</span>
         </div>
@@ -154,11 +172,11 @@ onMounted(() => {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .marquee1 span {   
-  animation-delay: -5s; 
+  animation-delay: -7.5s; 
 }
 
 .marquee2 span {

@@ -1,12 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import imgSrc from '../assets/backgrounds/01_home_bg.png';
 
 
 const loaded = ref(false);
 
 onMounted(() => {
   const img = new Image();
-  img.src = 'src/assets/backgrounds/01_home_bg.png';
+  img.src = imgSrc;
   console.log(img.src);
   img.onload = () => {
     loaded.value = true;
@@ -30,7 +31,7 @@ onMounted(() => {
           style="font-size: 45px; text-align: center; margin: 0; line-height: 80%; font-weight: bold; margin-left: 10px; margin-right: 10px;"
           class="lt-md"
         >
-          EMPOWER YOUR LIFE in a new <span style="font-size: 70px; line-height: 1;">REALITY</span>
+          EMPOWER YOUR LIFE <br> in a new <span style="font-size: 70px; line-height: 1;">REALITY</span>
       </div>
       </div>
       </section>

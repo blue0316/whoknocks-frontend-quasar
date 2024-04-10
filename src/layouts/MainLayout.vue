@@ -116,7 +116,7 @@ function moveToSection(section) {
 			style="text-align: right; color: gray"
 			>
 			<!-- @click="router.push('/fqa')" -->
-			 F.Q.A
+			 F.A.Q.
 		 </q-item-section>
 		 </q-item>
 		 <!-- <q-item>

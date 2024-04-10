@@ -1,5 +1,10 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useQuasar } from 'quasar';
+
+const $q = useQuasar();
+
+const startAnimation = ref(false);
 
 const countdownTime = ref('00 : 00 : 00');
 
@@ -13,6 +18,10 @@ onMounted(() => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
     countdownTime.value = `${days} : ${hours} : ${minutes}`;
   }, 1000);
+
+  setTimeout(() => {
+    startAnimation.value = true;
+  }, 2000);
 });
 
 function openNewPage() {
@@ -61,7 +70,15 @@ function openNewPage() {
   </q-btn>
 </div>
 </div>
-<div class="container">
+<div v-if="!$q.platform.is.ios" class="container">
+    <div class="marquee marquee1">
+      <span style="font-size: 250px; font-weight: 800;">$RIS $RIS $RIS</span>
+    </div>
+    <!-- <div class="marquee marquee2">
+    <span style="font-size: 250px; font-weight: 800;">$RIS $RIS $RIS</span>
+    </div> -->
+</div>
+<div v-if="$q.platform.is.ios && startAnimation" class="container">
     <div class="marquee marquee1">
       <span style="font-size: 250px; font-weight: 800;">$RIS $RIS $RIS</span>
     </div>
