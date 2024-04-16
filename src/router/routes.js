@@ -6,13 +6,17 @@ import RegisterPage from 'src/pages/RegisterPage.vue'
 import FqaPage from 'src/pages/FqaPage.vue'
 import SupportPage from 'src/pages/SupportPage.vue'
 
+// Import the ModelDetail component
+import ModelDetail from 'src/components/ModelView/ModelDetail.vue';
+
 const routes = [
   {
     path: '/',
     component: MainLayout,
     children: [
       { path: '', component: LandingPage },
-      // { path: 'land', component: LandPage },
+      { path: 'model/:id', name: 'ModelDetail', component: ModelDetail, props: true },
+      { path: 'land', component: LandPage },
       // { path: 'register', component: RegisterPage },
       // { path: 'avatar', component: AvatarPage },
       // { path: 'fqa', component: FqaPage},

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "TOWER 1",
+    "plat": "41,658",
+    "interests": "5",
+    "glbPath": "/src/assets/models/modelObjects/model1.glb",
+    "imagePath": "/src/assets/models/modelImages/model_1.png",
+    "smallImgPath": "/src/assets/models/modelImages/model_1_pp.png"
+  },
+  {
+    "id": 2,
+    "name": "VILLA 1",
+    "plat": "59,630",
+    "interests": "5",
+    "glbPath": "/src/assets/models/modelObjects/model2.glb",
+    "imagePath": "/src/assets/models/modelImages/model_2.png",
+    "smallImgPath": "/src/assets/models/modelImages/model_2_pp.png"
+  },
+  {
+    "id": 3,
+    "name": "TOWER 2",
+    "plat": "10,800",
+    "interests": "5",
+    "glbPath": "/src/assets/models/modelObjects/model3.glb",
+    "imagePath": "/src/assets/models/modelImages/model_3.png",
+    "smallImgPath": "/src/assets/models/modelImages/model_3_pp.png"
+  },
+  {
+    "id": 4,
+    "name": "M20 TOWER",
+    "plat": "26,800",
+    "interests": "3",
+    "glbPath": "/src/assets/models/modelObjects/model4.glb",
+    "imagePath": "/src/assets/models/modelImages/model_4.png",
+    "smallImgPath": "/src/assets/models/modelImages/model_4_pp.png"
+  },
+  {
+    "id": 5,
+    "name": "VILLA 2",
+    "plat": "44,812",
+    "interests": "5",
+    "glbPath": "/src/assets/models/modelObjects/model5.glb",
+    "imagePath": "/src/assets/models/modelImages/model_5.png",
+    "smallImgPath": "/src/assets/models/modelImages/model_5_pp.png"
+  }
+]

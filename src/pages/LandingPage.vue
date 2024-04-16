@@ -1,6 +1,6 @@
 <template>
     <q-page>
-        <div data-scroll-container style="background-color: #212121; max-width: 100%;" >
+        <div data-scroll-container style="background-color: #212121; max-width: 100%;">
             <section data-scroll-section id="home">
                 <HomeFirst />
             </section>
@@ -9,6 +9,12 @@
             </section>
             <section data-scroll-section id="live-play-earn">
                 <HomeThird />
+            </section>
+            <section data-scroll-section id="slider">
+                <HomeSlider />
+            </section>
+            <section data-scroll-section id="viewer">
+                <HomeViewer />
             </section>
             <section data-scroll-section id="be-your-self">
                 <HomeAvatar />
@@ -34,16 +40,16 @@ import { watch } from 'vue';
 import { useScrollStore } from '../stores/scroll-store';
 import HomeFirst from '../components/HomeFirst.vue';
 import HomeSecond from '../components/HomeSecond.vue';
-import HomeThird from '../components/HomeThird.vue'; 
+import HomeThird from '../components/HomeThird.vue';
 import HomeAvatar from '../components/HomeAvatar.vue';
 import HomeParthners from '../components/HomeParthners.vue';
 import HomeToken from '../components/HomeToken.vue';
+import HomeViewer from '../components/HomeViewer.vue';
 import HomeRoadMap from '../components/HomeRoadMap.vue';
 import HomeFooters from '../components/HomeFooters.vue';
-
+import HomeSlider from '../components/HomeSlider.vue';
 
 const scrollStore = useScrollStore();
-
 
 watch(scrollStore, (value) => {
     console.log(value.getSection);
@@ -55,3 +61,8 @@ watch(scrollStore, (value) => {
     scrollStore.setSection(null);
 });
 </script>
+<style>
+#slider {
+    height: 300vh;
+}
+</style>

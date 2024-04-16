@@ -105,8 +105,8 @@ function moveToSection(section) {
 		 <q-item-section 
 		 	class="text-h4 cursor-pointer" 
 			style="text-align: right; color: gray"
+			@click="router.push('/land')"
 			>
-			<!-- @click="router.push('/land')" -->
 			 World Map
 		 </q-item-section>
 		 </q-item>
